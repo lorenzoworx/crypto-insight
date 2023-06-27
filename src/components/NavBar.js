@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import { IoChevronBackOutline } from "react-icons/fa";
-import { BiMicrophone } from "react-icons/fa";
-import { AiOutlineSearch } from "react-icons/fa";
+import { IoChevronBackOutline } from "react-icons/io5";
+import { BiMicrophone } from "react-icons/bi";
+import { AiOutlineSearch } from "react-icons/ai";
 
  const NavBar = () => (
     <>
