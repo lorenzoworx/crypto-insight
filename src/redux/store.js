@@ -1,7 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
+import cryptoReducer from './crypto/cryptoCurrencySlice';
 
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    crypto: cryptoReducer,
+  },
 });
 
 export default store;
