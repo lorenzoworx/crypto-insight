@@ -37,7 +37,7 @@ const cryptoCurrencySlice = createSlice({
         ...state,
         isLoading: true,
       }))
-      .addCase(getCryptoDetails.fulfilled, (state,action) => {
+      .addCase(getCryptoDetails.fulfilled, (state, action) => {
         const currencyDetails = action.payload[0];
         const updateCurrency = (state.cryptoCurrencies.map((coin) => {
           if (coin.id !== currencyDetails.id) return coin;
