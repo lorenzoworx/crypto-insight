@@ -10,6 +10,6 @@ const Home = () => (
       <Outlet />
     </main>
   </>
-)
+);
 
 export default Home;
