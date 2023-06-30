@@ -1,12 +1,12 @@
-const API_URL = 'https://api.coingecko.com/api/v3/coins/markets'
+const API_URL = 'https://api.coingecko.com/api/v3/coins/markets';
 const getCurrencyDetails = async (currencyId) => {
   try {
     const response = await fetch(`${API_URL}?${new URLSearchParams({
       vs_currency: 'ngn',
       ID: currencyId,
       order: 'market_cap_desc',
-      per_page: '10',
-      page: '2',
+      per_page: '30',
+      page: '1',
       sparkline: 'false',
       locale: 'en',
     })}`, {
@@ -22,7 +22,7 @@ const getCurrencyDetails = async (currencyId) => {
       current_price: currency.current_price,
       details: {
         market_cap: currency.market_cap,
-        market_cap_rank: currency.market_cap_rand,
+        market_cap_rank: currency.market_cap_rank,
         fully_diluted_valuation: currency.fully_diluted_valuation,
         total_volume: currency.total_volume,
         high_24h: currency.high_24h,
@@ -39,7 +39,7 @@ const getCurrencyDetails = async (currencyId) => {
       last_updated: currency.last_updated,
     })));
     return currencyDetails;
-  } catch(err) {
+  } catch (err) {
     return err;
   }
 };
