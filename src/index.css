@@ -93,6 +93,10 @@ main {
   background: linear-gradient(to right, #4369b2, #1a2d4e);
 }
 
+.detailsHeading > img {
+  width: 120px;
+}
+
 .cryptoCurrencyList > li > a > img {
   width: 80px;
   align-self: center;
@@ -100,10 +104,6 @@ main {
 
 .detailsHeading {
   font-family: 'Open Sans', sans-serif;
-}
-
-.detailsHeading > img {
-  width: 120px;
 }
 
 .detailsHeading > span {
