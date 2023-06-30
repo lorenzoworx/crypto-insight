@@ -1,8 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 body {
   padding: 0;
   margin: 0;
+  display: flex;
+  background-color: #4369b2;
+  justify-content: center;
+  color: white;
+  padding-bottom: 50px;
 }
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav > a {
+  color: white;
+}
+
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+nav > span {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+main {
+  width: 80vw;
+}
+
+.coinGecko {
+  width: 200px;
+}
+
+.crypSight {
+  width: 200px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.pageDivider {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.09rem;
+  font-weight: 500;
+  background-color: #1a2d4e;
+}
+
+.pageDivider > div > svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.cryptoCurrencyList {
+  margin: 0;
+  padding: 0;
+  padding-top: 0;
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr 1fr;
+  background-color: #4369b2;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.cryptoCurrencyList > li > a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: flex-end;
+  justify-content: center;
+  background: linear-gradient(to right, #4369b2, #1a2d4e);
+}
+
+.cryptoCurrencyList > li > a > img {
+  width: 80px;
+  align-self: center;
+}
+
+.detailsHeading {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.detailsHeading > img {
+  width: 120px;
+}
+
+.detailsHeading > span {
+  font-size: 1.5rem;
+}
+
+.detailsPageDivider {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.09rem;
+  font-weight: 500;
+  background-color: #1a2d4e;
+}
+
+.detailsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.detailsList > li {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.detailsList li:nth-child(odd) {
+  background: linear-gradient(to right, #1a2d4e, #4369b2);
+}
+
+.detailsList li:nth-child(even) {
+  background: linear-gradient(to right, #4369b2, #1a2d4e);
+}
+
+.rightArrow { margin-left: 5px; }
+
+@media (max-width: 480px) {
+  main {
+    width: 100vw;
+  }
+
+  .cryptoCurrencyList {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cryptoCurrencyList > li > a {
+    align-items: center;
+  }
+
+  .cryptoCurrencyList > li > a > svg {
+    align-self: flex-end;
+  }
 }
