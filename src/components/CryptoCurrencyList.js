@@ -9,7 +9,6 @@ import crypSight from '../assets/cryptoInsight.png';
 const CryptoCurrencyList = () => {
   const { cryptoCurrencies, isLoading, error } = useSelector((state) => state.crypto);
   const dispatch = useDispatch();
-  // const [searchText, setSearchText] = useState('');
   const [searchList, setSearchList] = useState(cryptoCurrencies);
 
   useEffect(() => {
@@ -21,11 +20,6 @@ const CryptoCurrencyList = () => {
   useEffect(() => {
     setSearchList(cryptoCurrencies);
   }, [cryptoCurrencies]);
-
-  // const handleSearch = (e) => {
-  //   setSearchText(e.target.value);
-  //   setSearchList(cryptoCurrencies.filter((currency) => currency.name.includes(e.target.value)));
-  // };
 
   const handleAscending = () => {
     setSearchList([...searchList].sort((a, b) => b.current_price - a.current_price));
