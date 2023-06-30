@@ -59,9 +59,8 @@ Whether you are a seasoned cryptocurrency trader or simply curious about the wor
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-<!-- For a live demo, go [here]() -->
-Live Demo is currently unavailable
-
+ For a live demo, go [here](https://crypto-insight.onrender.com)
+ For a video demo, go [here](https://www.loom.com/share/6fe1296faa834463b64577062be6138b?sid=951ff6e4-c23e-4e4f-b34e-eccbb728ff3f)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
